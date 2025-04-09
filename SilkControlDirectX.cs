@@ -95,7 +95,7 @@ public class SilkControlDirectX : IDisposable
 
 
 
-        _window.FramebufferResize += OnResize;
+        _window.Resize += OnResize;
         _window.Initialize();
 
         _glfwNativeWindow = new GlfwNativeWindow(_glfw, (WindowHandle*)_window.Handle);

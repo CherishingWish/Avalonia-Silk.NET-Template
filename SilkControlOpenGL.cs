@@ -72,7 +72,7 @@ public class SilkControlOpenGL : IDisposable
         _window = Window.Create(options);
         _glfw = GlfwWindowing.GetExistingApi(_window);
 
-        _window.FramebufferResize += OnResize;
+        _window.Resize += OnResize;
         _window.Initialize();
 
         _glfwNativeWindow = new GlfwNativeWindow(_glfw, (WindowHandle*)_window.Handle);
