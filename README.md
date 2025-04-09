@@ -1,1 +1,1 @@
-# SilkTest2
+# Avalonia-Silk.NET-Template
