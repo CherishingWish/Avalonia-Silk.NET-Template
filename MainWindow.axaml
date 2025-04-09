@@ -1,0 +1,20 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="SilkTest.MainWindow"
+        Title="SilkTest">
+  <Grid RowDefinitions="*,*">
+    <Grid Grid.Row="0"
+    ColumnDefinitions="*,*">
+      <ContentControl Grid.Column="0" x:Name="MyContentControlDirectX"/>
+      <ContentControl Grid.Column="1" x:Name="MyContentControlOpenGL"/>
+    </Grid>
+    <Grid Grid.Row="1"
+    ColumnDefinitions="*,*">
+      <ContentControl Grid.Column="0" x:Name="MyContentControlVulkan"/>
+      <Rectangle Grid.Column="1" Fill="Orange"/>
+    </Grid>
+  </Grid>
+</Window>
